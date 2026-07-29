@@ -1,11 +1,12 @@
 a = int(input())
-if a >= 90:
-    print("A")
-elif a >= 80:
-    print("B")
-elif a >= 70:
-    print("C")
-elif a >= 60:
-    print("D")
+if a % 4 == 0:
+    if a % 100 == 0:
+        if (a % 400 == 0):
+            print("leap")
+            exit()
+        else:
+            print("not leap")
+            exit()
+    print("leap")
 else:
-    print("F")
+    print("not leap")
