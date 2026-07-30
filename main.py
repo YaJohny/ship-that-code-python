@@ -1,7 +1,5 @@
-n = -1
-sum = 0
-while n != 0:
-    n = int(input())
-    sum += n
-
-print(sum)
+n = int(input())
+for row in range(1, n+1):
+    space = " " * (n - row)
+    stars = "*" * row
+    print(space + stars)
