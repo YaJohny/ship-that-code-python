@@ -1,10 +1,8 @@
-word = input()
-word_lower = word.lower()
-vowels = ['a', 'e', 'i', 'o', 'u']
-count = 0
+item = input()
+qty = int(input())
+unit_price = float(input())
+total = qty * unit_price
 
-for letter in word_lower:
-    if letter in vowels:
-        count += 1
-
-print(count)
+print(f"Item: {item}")
+print(f"Quantity: {qty}")
+print(f"Total: ${total:.2f}")
