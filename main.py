@@ -1,5 +1,3 @@
-a = int(input())
-if a % 4 == 0 and (a % 100 != 0 or a % 400 == 0):
-    print("leap")
-else:
-    print("not leap")
+n = int(input())
+for i in range(1, 11):
+    print(f"{n} * {i} = {n * i}")
