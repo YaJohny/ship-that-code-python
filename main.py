@@ -1,2 +1,9 @@
 word = input()
-print(word[::-1])
+vowels = ['a', 'e', 'i', 'o', 'u']
+count = 0
+
+for letter in word:
+    if letter in vowels:
+        count += 1
+
+print(count)
